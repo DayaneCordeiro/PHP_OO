@@ -13,4 +13,4 @@ $person1 = new Person();
 
 $person1->name = "Dayane";
 $person1->age  = 25;
-$person1->falar();
+$person1->talk();
