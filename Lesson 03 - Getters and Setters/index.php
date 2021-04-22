@@ -35,5 +35,5 @@ $login1 = new Login();
 $login1->setEmail("test@test.com");
 $login1->setPassword("123456");
 $login1->log_into();
-
-echo $logar->getEmail();
+echo "<br>";
+echo $login1->getEmail();
