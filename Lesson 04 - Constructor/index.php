@@ -48,4 +48,5 @@ class Login {
 $login1 = new Login("test@test.com", "123456", "Dayane Cordeiro");
 
 $login1->log_into();
-echo $logar->getName();
+echo "<br>";
+echo $login1->getName();
