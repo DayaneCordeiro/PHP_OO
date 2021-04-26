@@ -1,45 +1,38 @@
 <?php
 
-class vehicle {
-    public $model;
-    public $color;
-    public $year;
+abstract class Bank {
+    protected $balance;
+    protected $withdraw_limit;
+    protected $fees;
 
-    public function drive() {
-        echo "Driving";
-    }
-    public function stop() {
-        echo "Stopping";
-    }
-}
+    abstract protected function withdraw($value);
+    abstract protected function deposit($value);
 
-class Car extends vehicle {
-    public function openDoors() {
-        echo "Opening doors";
+    public function getBalance() {
+        return $this->balance;
     }
-}
-class Motorcycle extends vehicle {
-    public function rideMotocycle() {
-        echo "Riding the motorcycle";
+
+    public function setBalance($balance) {
+        $this->balance = $balance;
     }
 }
 
-$car = new Car();
-$car->model = "Clio";
-$car->color = "Grey";
-$car->year = 2018;
-$car->drive();
-echo "<br>";
-$car->openDoors();
+class Itau extends Bank {
+    public function withdraw($value) {
+        $this->setBalance($this->getBalance() - $value);
+        echo "<hr>Withdrew: R$" . $value;
+    }
 
-var_dump($car);
+    public function deposit($value) {
+        $this->setBalance($this->getBalance() + $value);
+        echo "<hr>Deposited: R$" . $value;
+    }
+}
 
-$motocycle = new Motocycle();
-$motocycle->model = "Fan";
-$motocycle->color = "Blue";
-$motocycle->year = 2015;
-$motocycle->stop();
-echo "<br>";
-$motocycle->rideMotocycle();
-
-var_dump($motocycle);
+$itau1 = new Itau();
+$itau1->setBalance(1000);
+echo "<hr> Balance: R$" . $itau1->getBalance();
+$itau1->withdraw(250);
+echo "<hr> Balance: R$" . $itau1->getBalance();
+$itau1->deposit(350);
+echo "<hr> Balance: R$" . $itau1->getBalance();
