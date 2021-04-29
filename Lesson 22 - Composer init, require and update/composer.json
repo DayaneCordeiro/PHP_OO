@@ -1,0 +1,13 @@
+{
+    "name": "nodestudio/composer",
+    "description": "Testing composer",
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "^4.2"
+    },
+    "authors": [
+        {
+            "name": "Dayane Cordeiro",
+            "email": "dayane.cordeirogs@gmail.com"
+        }
+    ]
+}
