@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Model;
+
 class ProductDao {
     public function create(Product $product) {
         //
