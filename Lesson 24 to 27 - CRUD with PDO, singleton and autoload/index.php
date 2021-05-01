@@ -2,9 +2,20 @@
 
 require_once 'vendor/autoload.php';
 
-$product = new \App\Model\Product();
-$product->setName("Notebook DELL");
-$product->setDescription("i7, 8GB");
-
 $productDao = new \App\Model\ProductDao();
-$productDao->create($product);
+
+$products = array();
+$products = $productDao->read();
+
+echo "<pre>";
+    print_r($products);
+echo "</pre>";
+
+$product = new \App\Model\Product();
+$product->setId(1);
+$product->setName("Notebook Samsung");
+$product->setDescription("i3, 4GB");
+
+$productDao->update($product);
+$productDao->delete(1);
+
