@@ -1,10 +1,10 @@
 # PHP_OO
 
-Estudo realizado através do curso de PHP OOP disponível no site: https://www.youtube.com/watch?v=hzy_P_H-1CQ&list=PLwXQLZ3FdTVEau55kNj_zLgpXL4JZUg8I
+Study carried out through the PHP OOP course available on the website: https://www.youtube.com/watch?v=hzy_P_H-1CQ&list=PLwXQLZ3FdTVEau55kNj_zLgpXL4JZUg8I
 
-Todos os resumos das lições econtram-se disponíveis no seguinte endereço: https://www.notion.so/PHP-OO-bb711f10fc0a4823bef3da95e6c4b4c4
+All lesson summaries are available at the following address: https://www.notion.so/PHP-OO-bb711f10fc0a4823bef3da95e6c4b4c4
 
-Este curso baseou-se nos conceitos de orientação à objetos utilizando a liguagem PHP. Todos os pilares da orientação à objetos foram estudados, e alguns tópicos adicionais foram incluidos. As lições fora organizadas da seguinte forma:
+This course was based on object-oriented concepts using the PHP language. All pillars of object orientation have been studied, and some additional topics have been included. The lessons were organized as follows:
 
 * **Lesson 01** - Introduction to OPP;
 * **Lesson 02** - Classes, attributes and methods;
